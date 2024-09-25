@@ -14,15 +14,9 @@
       <!-- Filtros -->
       <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-12">
         <div>
-          <label for="duracao" class="block text-gray-700 mb-2">Duração</label>
-          <select id="duracao" [(ngModel)]="filtroSelecionado.duracao" class="border border-gray-300 rounded-lg py-2 px-4 w-full">
-            <option *ngFor="let duracao of filtros.duracao" [value]="duracao">{{ duracao }}</option>
-          </select>
-        </div>
-        <div>
-          <label for="dificuldade" class="block text-gray-700 mb-2">Dificuldade</label>
-          <select id="dificuldade" [(ngModel)]="filtroSelecionado.dificuldade" class="border border-gray-300 rounded-lg py-2 px-4 w-full">
-            <option *ngFor="let dificuldade of filtros.dificuldade" [value]="dificuldade">{{ dificuldade }}</option>
+          <label for="vagas" class="block text-gray-700 mb-2">vagas</label>
+          <select id="vagas" [(ngModel)]="filtroSelecionado.vagas" class="border border-gray-300 rounded-lg py-2 px-4 w-full">
+            <option *ngFor="let vagas of filtros.vagas" [value]="vagas">{{ vagas }}</option>
           </select>
         </div>
         <div>
@@ -46,8 +40,7 @@
         <img [src]="aula.imagem" alt="{{ aula.titulo }}" class="w-full h-40 object-cover rounded-t-lg mb-4">
         <h2 class="text-2xl font-semibold text-black mb-2">{{ aula.titulo }}</h2>
         <p class="text-gray-700 mb-2">{{ aula.descricao }}</p>
-        <p class="text-gray-500 mb-2">Duração: {{ aula.duracao }}</p>
-        <p class="text-gray-500 mb-2">Dificuldade: {{ aula.dificuldade }}</p>
+        <p class="text-gray-500 mb-2">Vagas: {{ aula.vagas }}</p>
         <p class="text-gray-500 mb-2">Tipo: {{ aula.tipo }}</p>
         <p class="text-gray-500 mb-4">Categoria: {{ aula.categoria }}</p>
         <a [href]="aula.link" target="_blank" class="bg-primary text-white py-2 px-4 rounded-lg shadow hover:bg-primary-hover transition-colors duration-300 inline-block">Acessar Aulas</a>

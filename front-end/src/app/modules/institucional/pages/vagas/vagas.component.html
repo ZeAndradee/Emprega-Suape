@@ -32,11 +32,11 @@
   <span class="block font-regular text-gray-400 text-base mb-4">23 Resultados</span>
 
   <div class="flex justify-center w-full bg-red-400">
-    <h2>Ops</h2>
+    <!-- <h2>Ops</h2> -->
   </div>
   <!-- Lista de Vagas -->
-  <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> -->
-    <!-- <div *ngFor="let vaga of vagas"
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div *ngFor="let vaga of vagas"
       class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
       <div class="flex items-center mb-2">
         <img [src]="vaga.logo" alt="{{ vaga.empresa }}" class="w-10 h-10 rounded-full mr-3 object-cover object-center">
@@ -44,19 +44,14 @@
       </div>
       <p class="text-lg font-medium text-primary mb-2">{{ vaga.empresa }} - {{ vaga.localizacao }}</p>
       <p class="text-gray-700 mb-4">{{ vaga.descricao }}</p>
-      <div class="flex justify-between items-center mb-4">
+      <div class="flex flex-col justify-between mb-4">
         <span class="text-lg font-medium text-black">{{ vaga.salario }}</span>
         <span class="text-sm text-gray-500">{{ vaga.data }}</span>
-      </div>
-      <div class="flex items-center mb-4">
-        <span class="text-sm text-gray-500 mr-4">{{ vaga.tipo }}</span>
-        <span class="text-sm text-gray-500 mr-4">{{ vaga.modelo }}</span>
-        <span class="text-sm text-gray-500">{{ vaga.pcD ? 'Vaga para PcD' : '' }}</span>
       </div>
       <button
         class="bg-primary text-white py-2 px-4 rounded-lg shadow hover:bg-primary-hover transition-colors duration-300">
         Candidatar-se
       </button>
-    </div> -->
-  <!-- </div> -->
+    </div>
+  </div>
 </div>

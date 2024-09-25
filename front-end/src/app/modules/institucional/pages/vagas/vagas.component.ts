@@ -16,55 +16,44 @@ export class VagasComponent implements OnInit {
 
   vagas = [
     {
-      titulo: 'Desenvolvedor Front-end',
-      empresa: 'Tech Solutions',
+
+      titulo: 'Assistente de Almoxarifado',
+      empresa: 'Shineray',
       localizacao: 'Igarassu, PE',
       descricao:
         'Estamos buscando um desenvolvedor front-end com experiência em Angular e TypeScript.',
-      salario: 'R$ 6.000 - R$ 8.000',
+      salario: 'R$ 1.900 - R$ 2.100',
       data: 'Publicado há 3 dias',
-      tipo: 'Remoto',
-      modelo: 'Efetivo',
-      pcD: true,
       logo: '/assets/images/logo1.png',
     },
     {
-      titulo: 'Analista de Dados',
-      empresa: 'Data Insights',
+      titulo: 'Auxiliar de Produção',
+      empresa: 'Seara',
       localizacao: 'Igarassu, PE',
       descricao: 'Analista de Dados com experiência em SQL e Python.',
       salario: 'R$ 5.000 - R$ 7.000',
       data: 'Publicado há 5 dias',
-      tipo: 'Híbrido',
-      modelo: 'Efetivo',
-      pcD: false,
-      logo: '/assets/images/logo2.png',
+      logo: '/assets/images/logo1.png',
     },
     {
-      titulo: 'Designer UX/UI',
-      empresa: 'Creative Agency',
+      titulo: 'Gestão Portuária',
+      empresa: 'Porto de Suape',
       localizacao: 'Goiana, PE',
       descricao:
         'Procuramos um designer UX/UI para criar experiências de usuário incríveis.',
       salario: 'R$ 4.500 - R$ 6.500',
       data: 'Publicado há 7 dias',
-      tipo: 'Presencial',
-      modelo: 'Estágio',
-      pcD: true,
-      logo: '/assets/images/logo3.png',
+      logo: '/assets/images/logo1.png',
     },
     {
-      titulo: 'Tech Lead',
+      titulo: 'Eletricista',
       empresa: 'Creative Agency',
       localizacao: 'Goiana, PE',
       descricao:
         'Procuramos um líder técnico para liderar nossa equipe de desenvolvimento.',
       salario: 'R$ 8.000 - R$ 10.000',
       data: 'Publicado há 7 dias',
-      tipo: 'Presencial',
-      modelo: 'Efetivo',
-      pcD: true,
-      logo: '/assets/images/logo3.png',
+      logo: '/assets/images/logo1.png',
     },
   ];
 
