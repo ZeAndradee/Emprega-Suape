@@ -17,8 +17,8 @@ from modules.perfil import perfilrouter
 from modules.candidatura import candidaturarouter
 
 app = FastAPI(
-    title="API do Projeto Emprega Social", 
-    description="O Emprega Social é uma plataforma web que funciona como uma agência de emprego com foco no social, conectando demandas de trabalho de empresas e órgãos públicos com pessoas em busca de emprego, priorizando e qualificando grupos sociais vulneráveis, como jovens em seu primeiro emprego ou em situação de risco, pessoas com deficiência e mulheres vítimas de violência.", 
+    title="API do Projeto Suape Emprega", 
+    description="O Suape Emprega é uma plataforma web que funciona como uma agência de emprego com foco no social, conectando demandas de trabalho de empresas e órgãos públicos com pessoas em busca de emprego, priorizando e qualificando grupos sociais vulneráveis, como jovens em seu primeiro emprego ou em situação de risco, pessoas com deficiência e mulheres vítimas de violência.", 
     version="1.0")
 
 origins = [
