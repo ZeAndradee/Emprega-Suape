@@ -30,7 +30,7 @@ export class VagasComponent implements OnInit {
       titulo: 'Operador Técnico de Logística ',
       empresa: 'Aché',
       localizacao: 'Cabo de Santo Agostinho',
-      descricao: 'Preencher check-list para os processos de recebimento e expedição; Cumprir os procedimentos e as normas de segurança, utilizando todos os equipamentos de proteção',
+      descricao: 'Preencher check-list para os processos de recebimento e expedição; Cumprir os procedimentos...',
       salario: 'R$ 1.808 - R$ 3.208',
       data: 'Publicado há 2 dias',
       logo: 'https://sbdfl.org.br/wp-content/uploads/2019/03/Ache-300x268.png',
@@ -40,7 +40,7 @@ export class VagasComponent implements OnInit {
       empresa: 'Tecon',
       localizacao: 'Ipojuca',
       descricao:
-        'Realizar as atividades de manutenção elétrica preventiva, preditiva e corretiva em equipamentos de pequeno, médio e grande porte, subestações, quadros de distribuição, bem como auxiliar os Técnicos de Mecânica em suas atividades.',
+        'Realizar as atividades de manutenção elétrica preventiva, preditiva e corretiva em equipamentos de pequeno, ..',
       salario: 'A combinar',
       data: 'Publicado há 7 dias',
       logo: 'https://www.acusticadan.com.br/imagem/logo-tecon.png',
