@@ -8,7 +8,7 @@ import { QualificacoesComponent } from './pages/qualificacoes/qualificacoes.comp
 import { PerfilCandidatoComponent } from './pages/perfil-candidato/perfil-candidato.component';
 import { TestesComponent } from './pages/testes/testes.component';
 import { SharedModule } from '@app/shared/shared.module';
-
+import { VisualizarVagaComponent } from './pages/vagas/visualizar-vaga/visualizar-vaga.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +16,15 @@ import { SharedModule } from '@app/shared/shared.module';
     VagasComponent,
     QualificacoesComponent,
     PerfilCandidatoComponent,
-    TestesComponent
+    TestesComponent,
+    VisualizarVagaComponent,
   ],
   imports: [
     InstitucionalRoutingModule,
     ReactiveFormsModule,
     SharedModule,
     FormsModule,
-    CommonModule
-  ]
+    CommonModule,
+  ],
 })
-export class InstitucionalModule { }
+export class InstitucionalModule {}

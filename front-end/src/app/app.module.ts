@@ -11,10 +11,14 @@ import { HttpErrorInterceptorService } from './core/interceptors/http-error.inte
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TokenHttpInterceptor } from './core/interceptors/token-http.interceptor';
+import { DashboardEmpresaComponent } from './modules/dashboard-empresa/dashboard-empresa.component';
+import { ParaEmpresasComponent } from './modules/gestao/pages/para-empresas/para-empresas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardEmpresaComponent,
+    ParaEmpresasComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,7 @@ import { TokenHttpInterceptor } from './core/interceptors/token-http.interceptor
   providers: [
     provideClientHydration(),
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptorService, multi: true  },
-    // { provide: HTTP_INTERCEPTORS, useClass: TokenHttpInterceptor, multi: true  }
+    { provide: HTTP_INTERCEPTORS, useClass: TokenHttpInterceptor, multi: true  }
   ],
   bootstrap: [AppComponent]
 })

@@ -6,6 +6,9 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { QualificacoesComponent } from './pages/qualificacoes/qualificacoes.component';
 import { PerfilCandidatoComponent } from './pages/perfil-candidato/perfil-candidato.component';
 import { TestesComponent } from './pages/testes/testes.component';
+import { VisualizarVagaComponent } from './pages/vagas/visualizar-vaga/visualizar-vaga.component';
+import { DashboardEmpresaComponent } from '../dashboard-empresa/dashboard-empresa.component';
+import { ParaEmpresasComponent } from '../gestao/pages/para-empresas/para-empresas.component';
 
 const routes: Routes = [
   {
@@ -32,7 +35,19 @@ const routes: Routes = [
         path: 'testes',
         component: TestesComponent,
       },
+      {
+        path: 'dashboard',
+        component: DashboardEmpresaComponent,
+      },
+      {
+        path: 'para-empresas',
+        component: ParaEmpresasComponent,
+      },
     ],
+  },
+  {
+    path: 'vagas/:id',
+    component: VisualizarVagaComponent,
   },
 ];
 
